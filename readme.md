@@ -11,7 +11,7 @@ SDK只依赖了三个jar包
 
 ## 集成
  * 中央仓库获取[JAR]()
-   * Maven
+   * Maven 暂未支持
 ```
     <dependency>
         <groupId>com.jumper.open.sdk</groupId>
@@ -19,9 +19,9 @@ SDK只依赖了三个jar包
         <version>1.0.5-SNAPSHOT</version>
     </dependency>
 ```
-   * Gradle
+   * Gradle 暂未支持
 ```
-    compile group: 'cn.rongcloud.im', name: 'jumper-open-sdk', version: '1.0.5-SNAPSHOT'
+    compile group: 'com.jumper.open.sdk', name: 'jumper-open-sdk', version: '1.0.5-SNAPSHOT'
    
 ```
    * 基于源码 Meavn 打包构建
