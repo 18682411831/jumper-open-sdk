@@ -9,12 +9,46 @@ SDK只依赖了三个jar包
 - fastjson.jar 用于json处理
 - commons-logging.jar 日志处理
 
+## 集成
+ * 中央仓库获取[JAR]()
+   * Maven 暂未支持
+```
+    <dependency>
+        <groupId>com.jumper.open.sdk</groupId>
+        <artifactId>jumper-open-sdk</artifactId>
+        <version>1.0.5-SNAPSHOT</version>
+    </dependency>
+```
+   * Gradle 暂未支持
+```
+    compile group: 'com.jumper.open.sdk', name: 'jumper-open-sdk', version: '1.0.5-SNAPSHOT'
+   
+```
+   * 基于源码 Meavn 打包构建
+```
+   1、下载或克隆 `jumper-open-sdk`
+   
+   2、进入项目 `jumper-open-sdk` 目录
+   
+   3、安装依赖 `mvn install`
+   
+   4、打包 `mvn clean package`
+   
+```
+   * 运行环境
+   
+    Java版本  8+
+	
+# 使用
+
+请前往 [开发者后台](http://open-doc.jumper-health.com/index.html#/login) 注册用户 -> 获取 Appkey、Secret
+
 ## 接口封装步骤
 
 比如获取故事信息接口
 
 - 接口名：alipay.story.find
-- 版本号：1.0.5
+- 版本号：1.0.0
 - 参数：name 故事名称
 - 返回信息
 
