@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.jumper.open.sdk</groupId>
+	<groupId>jumper-health.com </groupId>
 	<artifactId>jumper-open-sdk</artifactId>
 	<version>1.0.5-SNAPSHOT</version>
 	<packaging>jar</packaging>
