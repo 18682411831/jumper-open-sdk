@@ -42,6 +42,7 @@ public class SdkTest extends TestCase {
         // 请求参数
         GetStoryModel model = new GetStoryModel();
         model.setName("白雪公主");
+        request.setVersion("1.0.1");
         request.setBizModel(model);
 
         // 发送请求
