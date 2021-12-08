@@ -146,7 +146,7 @@ public void testGet() {
 
 如果不想添加Request,Response,Model。可以用这种方式，返回body部分是字符串，后续自己处理
 
-body对应的是alipay_story_find_response部分
+body对应的是test001_response部分
 
 ```java
 @Test
@@ -165,7 +165,7 @@ public void testLazy() {
     CommonResponse response = client.execute(request);
 
     if (response.isSuccess()) {
-        // 返回结果，body对应的是alipay_story_find_response部分
+        // 返回结果，body对应的是test001_response部分
         String body = response.getBody();
         JSONObject jsonObject = JSON.parseObject(body);
         System.out.println(jsonObject);
