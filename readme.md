@@ -10,7 +10,7 @@ SDK只依赖了三个jar包
 - commons-logging.jar 日志处理
 
 ## 集成
- * 中央仓库获取[JAR]()
+ * 中央仓库获取[JAR](https://s01.oss.sonatype.org/#nexus-search;quick~com.jumper-health)
 ```
  <dependency>
   <groupId>com.jumper-health</groupId>
