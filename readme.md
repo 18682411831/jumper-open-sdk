@@ -12,11 +12,11 @@ SDK只依赖了三个jar包
 ## 集成
  * 中央仓库获取[JAR]()
 ```
-    <dependency>
-        <groupId>com.jumper.open.sdk</groupId>
-        <artifactId>jumper-open-sdk</artifactId>
-        <version>1.0.5-SNAPSHOT</version>
-    </dependency>
+ <dependency>
+  <groupId>com.jumper-health</groupId>
+  <artifactId>jumper-open-sdk</artifactId>
+  <version>1.0.5-RELEASE</version>
+</dependency>
 ```
    * Gradle 暂未支持
 ```
