@@ -11,8 +11,8 @@ public class HexUtil {
     /**
      * 二进制转十六进制字符串
      * 
-     * @param bytes
-     * @return
+     * @param bytes bytes
+     * @return s
      */
     public static String byte2hex(byte[] bytes) {
         StringBuilder sign = new StringBuilder();

@@ -21,9 +21,9 @@ public class FileUtil {
 
     /**
      * 将文件流转换成byte[]
-     * @param input
-     * @return
-     * @throws IOException
+     * @param input input
+     * @return ds
+     * @throws IOException IOException
      */
     public static byte[] toBytes(InputStream input) throws IOException {
         ByteArrayOutputStream output = new ByteArrayOutputStream();
@@ -40,7 +40,7 @@ public class FileUtil {
      * 将文件转换成数据流
      * @param file 文件
      * @return 返回数据流
-     * @throws IOException
+     * @throws IOException IOException
      */
     public static byte[] toBytes(File file) throws IOException {
         if (file.exists()) {

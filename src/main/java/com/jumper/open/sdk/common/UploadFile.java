@@ -23,7 +23,7 @@ public class UploadFile implements Serializable {
     /**
      * @param name 表单名称，不能重复
      * @param file 文件
-     * @throws IOException
+     * @throws IOException  IOException
      */
     public UploadFile(String name, File file) throws IOException {
         this(name, file.getName(), FileUtil.toBytes(file));
@@ -33,7 +33,7 @@ public class UploadFile implements Serializable {
      * @param name 表单名称，不能重复
      * @param fileName 文件名
      * @param input 文件流
-     * @throws IOException
+     * @throws IOException  IOException
      */
     public UploadFile(String name, String fileName, InputStream input) throws IOException {
         this(name, fileName, FileUtil.toBytes(input));

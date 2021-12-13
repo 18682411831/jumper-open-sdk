@@ -50,8 +50,8 @@ public class SopSignature {
 
     /**
      * 
-     * @param sortedParams
-     * @return
+     * @param sortedParams  sortedParams
+     * @return  return
      */
     public static String getSignContent(Map<String, ?> sortedParams) {
         StringBuffer content = new StringBuffer();
@@ -72,11 +72,12 @@ public class SopSignature {
     /**
      *  rsa内容签名
      * 
-     * @param content
-     * @param privateKey
-     * @param charset
-     * @return
-     * @throws SopSignException
+     * @param content  content
+     * @param privateKey 私钥
+     * @param charset  编码
+     * @param signType  signType
+     * @return  return
+     * @throws SopSignException  SopSignException
      */
     public static String rsaSign(String content, String privateKey, String charset,
                                  String signType) throws SopSignException {
@@ -96,12 +97,11 @@ public class SopSignature {
 
     /**
      * sha256WithRsa 加签
-     * 
-     * @param content
-     * @param privateKey
-     * @param charset
-     * @return
-     * @throws SopSignException
+     * @param content  content
+     * @param privateKey privateKey
+     * @param charset charset
+     * @return return
+     * @throws SopSignException SopSignException
      */
     public static String rsa256Sign(String content, String privateKey,
                                     String charset) throws SopSignException {
@@ -133,11 +133,11 @@ public class SopSignature {
     /**
      * sha1WithRsa 加签
      * 
-     * @param content
-     * @param privateKey
-     * @param charset
-     * @return
-     * @throws SopSignException
+     * @param content content
+     * @param privateKey privateKey
+     * @param charset charset
+     * @return return
+     * @throws SopSignException SopSignException
      */
     public static String rsaSign(String content, String privateKey,
                                  String charset) throws SopSignException {
@@ -354,13 +354,13 @@ public class SopSignature {
      *    <br>charset=UTF-8
      * <br>}
      * </p>
-     * @param params
+     * @param params params
      * @param alipayPublicKey 支付宝公钥
      * @param cusPrivateKey   商户私钥
      * @param isCheckSign     是否验签
      * @param isDecrypt       是否解密
      * @return 解密后明文，验签失败则异常抛出
-     * @throws SopSignException
+     * @throws SopSignException SopSignException
      */
     public static String checkSignAndDecrypt(Map<String, String> params, String alipayPublicKey,
                                              String cusPrivateKey, boolean isCheckSign,
@@ -392,13 +392,14 @@ public class SopSignature {
      *    <br>charset=UTF-8
      * <br>}
      * </p>
-     * @param params
+     * @param params params
      * @param alipayPublicKey 支付宝公钥
      * @param cusPrivateKey   商户私钥
      * @param isCheckSign     是否验签
      * @param isDecrypt       是否解密
+     * @param signType       signType
      * @return 解密后明文，验签失败则异常抛出
-     * @throws SopSignException
+     * @throws SopSignException SopSignException
      */
     public static String checkSignAndDecrypt(Map<String, String> params, String alipayPublicKey,
                                              String cusPrivateKey, boolean isCheckSign,
@@ -428,16 +429,7 @@ public class SopSignature {
      * @param isEncrypt       是否加密，true-加密  false-不加密
      * @param isSign          是否签名，true-签名  false-不签名
      * @return 加密、签名后xml内容字符串
-     * <p>
-     * 返回示例：
-     * <alipay>
-     *  <response>密文</response>
-     *  <encryption_type>RSA</encryption_type>
-     *  <sign>sign</sign>
-     *  <sign_type>RSA</sign_type>
-     * </alipay>
-     * </p>
-     * @throws SopSignException
+     * @throws SopSignException SopSignException
      */
     public static String encryptAndSign(String bizContent, String alipayPublicKey,
                                         String cusPrivateKey, String charset, boolean isEncrypt,
@@ -480,17 +472,9 @@ public class SopSignature {
      * @param charset         字符集，如UTF-8, GBK, GB2312
      * @param isEncrypt       是否加密，true-加密  false-不加密
      * @param isSign          是否签名，true-签名  false-不签名
+     * @param signType          是否签名，true-签名  false-不签名
      * @return 加密、签名后xml内容字符串
-     * <p>
-     * 返回示例：
-     * <alipay>
-     *  <response>密文</response>
-     *  <encryption_type>RSA</encryption_type>
-     *  <sign>sign</sign>
-     *  <sign_type>RSA</sign_type>
-     * </alipay>
-     * </p>
-     * @throws SopSignException
+     * @throws SopSignException SopSignException
      */
     public static String encryptAndSign(String bizContent, String alipayPublicKey,
                                         String cusPrivateKey, String charset, boolean isEncrypt,
@@ -535,7 +519,7 @@ public class SopSignature {
      * @param publicKey 公钥
      * @param charset   字符集，如UTF-8, GBK, GB2312
      * @return 密文内容
-     * @throws SopSignException
+     * @throws SopSignException  SopSignException
      */
     public static String rsaEncrypt(String content, String publicKey,
                                     String charset) throws SopSignException {
@@ -580,7 +564,7 @@ public class SopSignature {
      * @param privateKey 私钥
      * @param charset    字符集，如UTF-8, GBK, GB2312
      * @return 明文内容
-     * @throws SopSignException
+     * @throws SopSignException SopSignException
      */
     public static String rsaDecrypt(String content, String privateKey,
                                     String charset) throws SopSignException {

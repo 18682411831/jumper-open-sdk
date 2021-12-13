@@ -76,7 +76,7 @@ public abstract class BaseRequest<T extends BaseResponse> {
     /**
      * 添加上传文件
      *
-     * @param file
+     * @param file  file
      */
     public void addFile(UploadFile file) {
         if (this.files == null) {
@@ -124,7 +124,7 @@ public abstract class BaseRequest<T extends BaseResponse> {
     /**
      * 指定版本号
      *
-     * @param version
+     * @param version  版本号
      */
     public void setVersion(String version) {
         this.version = version;

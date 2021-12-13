@@ -66,10 +66,10 @@ public class OpenHttp {
     /**
      * get请求
      *
-     * @param url
-     * @param header
-     * @return
-     * @throws IOException
+     * @param url 请求地址
+     * @param header 请求头信息
+     * @return 返回body报文
+     * @throws IOException 错误信息
      */
     public String get(String url, Map<String, String> header) throws IOException {
         Request.Builder builder = new Request.Builder().url(url).get();
@@ -88,7 +88,7 @@ public class OpenHttp {
      * @param json   json数据
      * @param header header
      * @return 返回响应结果
-     * @throws IOException
+     * @throws IOException 错误信息
      */
     public String requestJson(String url, String json, Map<String, String> header) throws IOException {
         RequestBody body = RequestBody.create(MEDIA_TYPE_JSON, json);
@@ -116,8 +116,8 @@ public class OpenHttp {
      * @param form   参数
      * @param header header
      * @param method 请求方式，post，get等
-     * @return
-     * @throws IOException
+     * @return  return 报文
+     * @throws IOException  IOException
      */
     public String request(String url, Map<String, String> form, Map<String, String> header, RequestMethod method) throws IOException {
         Request.Builder requestBuilder = buildRequestBuilder(url, form, method);
@@ -179,12 +179,12 @@ public class OpenHttp {
     /**
      * 提交表单，并且上传文件
      *
-     * @param url
-     * @param form
-     * @param header
-     * @param files
-     * @return
-     * @throws IOException
+     * @param url  url
+     * @param form form
+     * @param header  header
+     * @param files  files
+     * @return  return
+     * @throws IOException  IOException
      */
     public String requestFile(String url, Map<String, String> form, Map<String, String> header, List<UploadFile> files)
             throws IOException {

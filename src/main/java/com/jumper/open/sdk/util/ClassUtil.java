@@ -38,6 +38,8 @@ public class ClassUtil {
      *
      * @param clazz 从哪个类中获取
      * @param index 泛型参数索引,从0开始
+     * @return class
+     * @throws IndexOutOfBoundsException IndexOutOfBoundsException
      */
     public static Class<?> getSuperClassGenricType(Class<?> clazz, int index) throws IndexOutOfBoundsException {
         String cacheKey = clazz.getName() + index;

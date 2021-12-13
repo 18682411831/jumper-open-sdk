@@ -37,6 +37,8 @@ public abstract class StringUtils {
 
 	/**
 	 * 检查对象是否为数字型字符串,包含负数开头的。
+	 * @param  obj obj
+	 * @return  return
 	 */
 	public static boolean isNumeric(Object obj) {
 		if (obj == null) {
@@ -63,6 +65,8 @@ public abstract class StringUtils {
 
 	/**
 	 * 检查指定的字符串列表是否不为空。
+	 * @param values v
+	 * @return obj
 	 */
 	public static boolean areNotEmpty(String... values) {
 		boolean result = true;
@@ -78,6 +82,8 @@ public abstract class StringUtils {
 
 	/**
 	 * 把通用字符编码的字符串转化为汉字编码。
+	 * @param unicode 字符串
+	 * @return  ds
 	 */
 	public static String unicodeToChinese(String unicode) {
 		StringBuilder out = new StringBuilder();
@@ -91,6 +97,8 @@ public abstract class StringUtils {
 
 	/**
 	 * 过滤不可见字符
+	 * @param input in
+	 * @return  dd
 	 */
 	public static String stripNonValidXMLCharacters(String input) {
 		if (input == null || ("".equals(input))) {

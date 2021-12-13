@@ -13,8 +13,8 @@ public class MD5Util {
     /**
      * 生成md5,全部大写
      * 
-     * @param input
-     * @return
+     * @param input input
+     * @return s
      */
     public static String encryptUpper(String input) {
         return encrypt(input).toUpperCase();
@@ -23,8 +23,8 @@ public class MD5Util {
     /**
      * 生成md5,全部大写
      * 
-     * @param input
-     * @return
+     * @param input input
+     * @return s
      */
     public static String encryptUpper(byte[] input) {
         return encrypt(input).toUpperCase();
@@ -33,8 +33,8 @@ public class MD5Util {
     /**
      * 生成md5,全部小写
      * 
-     * @param input
-     * @return
+     * @param input input
+     * @return s
      */
     public static String encrypt(String input) {
         if(input == null || "".equals(input)) {
@@ -45,8 +45,8 @@ public class MD5Util {
     
     /**
      * 返回长度16串,小写
-     * @param input
-     * @return
+     * @param input c
+     * @return d
      */
     public static String encrypt16(String input) {
         return encrypt(input).substring(8,24);
@@ -55,8 +55,8 @@ public class MD5Util {
     /**
      * 生成md5,全部小写
      * 
-     * @param input
-     * @return
+     * @param input s
+     * @return s
      */
     public static String encrypt(byte[] input) {
         if(input == null || input.length == 0) {

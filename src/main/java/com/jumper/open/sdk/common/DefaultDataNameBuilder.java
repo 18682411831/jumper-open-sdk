@@ -1,8 +1,8 @@
 package com.jumper.open.sdk.common;
 
 /**
- * 将方法名中的"."转成"_"并在后面追加"_response"<br>
- * 如：alipay.trade.order.settle --> alipay_trade_order_settle_response<br>
+ * 将方法名中的"."转成"_"并在后面追加"_response"
+ * 如：alipay.trade.order.settle -- alipay_trade_order_settle_response
  * <pre>
  * {
  *     "alipay_trade_order_settle_response": {
