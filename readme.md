@@ -11,7 +11,6 @@ SDK只依赖了三个jar包
 
 ## 集成
  * 中央仓库获取[JAR]()
-   * Maven 暂未支持
 ```
     <dependency>
         <groupId>com.jumper.open.sdk</groupId>
