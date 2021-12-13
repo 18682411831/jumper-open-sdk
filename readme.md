@@ -10,7 +10,7 @@ SDK只依赖了三个jar包
 - commons-logging.jar 日志处理
 
 ## 集成
- * 中央仓库获取[JAR]()
+ * 中央仓库获取[JAR](https://search.maven.org/search?q=a:jumper-open-sdk)
 ```
   <dependency>
     <groupId>com.jumper-health</groupId>
@@ -18,10 +18,9 @@ SDK只依赖了三个jar包
     <version>1.0.5-RELEASE</version>
   </dependency>
 ```
-   * Gradle 暂未支持
+   * Gradle 
 ```
-    compile group: 'com.jumper.open.sdk', name: 'jumper-open-sdk', version: '1.0.5-SNAPSHOT'
-   
+  implementation 'com.jumper-health:jumper-open-sdk:1.0.5-RELEASE'
 ```
    * 基于源码 Meavn 打包构建
 ```
